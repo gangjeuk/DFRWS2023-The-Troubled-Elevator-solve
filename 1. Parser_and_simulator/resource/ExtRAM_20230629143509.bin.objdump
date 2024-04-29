@@ -1,0 +1,304 @@
+
+ExtRAM_20230629143509.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e0cc <.data+0x1e0cc>:
+   1e0cc:	0c                            	bra.s	0x1e0d0
+   1e0cd:	37                            	*unknown*
+   1e0ce:	02                            	rts
+   1e0cf:	00                            	brk
+   1e0d0:	7c 0c                         	btst	#0, r12
+   1e0d2:	23 06                         	bnc.b	0x1e0d8
+   1e0d4:	f2 71 00 00                   	bset	#1, 0[r7].b
+   1e0d8:	23 06                         	bnc.b	0x1e0de
+   1e0da:	f2 7a 00 00                   	bclr	#2, 0[r7].b
+   1e0de:	23 06                         	bnc.b	0x1e0e4
+   1e0e0:	f2 7b 00 00                   	bclr	#3, 0[r7].b
+   1e0e4:	fc fe 72 00 00                	bmc	#7, 0[r7].b
+   1e0e9:	23 06                         	bnc.b	0x1e0ef
+   1e0eb:	f2 78 00 00                   	bclr	#0, 0[r7].b
+   1e0ef:	7c 1c                         	btst	#1, r12
+   1e0f1:	23 06                         	bnc.b	0x1e0f7
+   1e0f3:	f2 79 00 00                   	bclr	#1, 0[r7].b
+   1e0f7:	23 06                         	bnc.b	0x1e0fd
+   1e0f9:	f2 72 00 00                   	bset	#2, 0[r7].b
+   1e0fd:	23 06                         	bnc.b	0x1e103
+   1e0ff:	f2 7b 00 00                   	bclr	#3, 0[r7].b
+   1e103:	fc e2 72 01 00                	bmc	#0, 1[r7].b
+   1e108:	23 06                         	bnc.b	0x1e10e
+   1e10a:	f2 78 00 00                   	bclr	#0, 0[r7].b
+   1e10e:	7c 2c                         	btst	#2, r12
+   1e110:	23 06                         	bnc.b	0x1e116
+   1e112:	f2 79 00 00                   	bclr	#1, 0[r7].b
+   1e116:	23 06                         	bnc.b	0x1e11c
+   1e118:	f2 7a 00 00                   	bclr	#2, 0[r7].b
+   1e11c:	23 06                         	bnc.b	0x1e122
+   1e11e:	f2 73 00 00                   	bset	#3, 0[r7].b
+   1e122:	fc e6 72 01 00                	bmc	#1, 1[r7].b
+   1e127:	23 06                         	bnc.b	0x1e12d
+   1e129:	f2 78 00 00                   	bclr	#0, 0[r7].b
+   1e12d:	0c                            	bra.s	0x1e131
+   1e12e:	37                            	*unknown*
+   1e12f:	02                            	rts
+   1e130:	00                            	brk
+   1e131:	7c 5c                         	btst	#5, r12
+   1e133:	23 0a                         	bnc.b	0x1e13d
+   1e135:	ce 7e 00 00                   	mov.b	0[r7], r14
+   1e139:	7e 0e                         	not	r14
+   1e13b:	7c 7e                         	btst	#7, r14
+   1e13d:	23 06                         	bnc.b	0x1e143
+   1e13f:	f2 74 00 00                   	bset	#4, 0[r7].b
+   1e143:	f6 74 00 00                   	btst	#4, 0[r7].b
+   1e147:	23 04                         	bnc.b	0x1e14b
+   1e149:	78 1d                         	bset	#1, r13
+   1e14b:	f6 77 00 00                   	btst	#7, 0[r7].b
+   1e14f:	23 06                         	bnc.b	0x1e155
+   1e151:	f6 74 00 00                   	btst	#4, 0[r7].b
+   1e155:	23 04                         	bnc.b	0x1e159
+   1e157:	7a 1d                         	bclr	#1, r13
+   1e159:	f6 77 00 00                   	btst	#7, 0[r7].b
+   1e15d:	23 06                         	bnc.b	0x1e163
+   1e15f:	f2 7c 00 00                   	bclr	#4, 0[r7].b
+   1e163:	0c                            	bra.s	0x1e167
+   1e164:	37                            	*unknown*
+   1e165:	02                            	rts
+   1e166:	00                            	brk
+   1e167:	7c 6c                         	btst	#6, r12
+   1e169:	23 0a                         	bnc.b	0x1e173
+   1e16b:	ce 7e 01 00                   	mov.b	1[r7], r14
+   1e16f:	7e 0e                         	not	r14
+   1e171:	7c 0e                         	btst	#0, r14
+   1e173:	23 06                         	bnc.b	0x1e179
+   1e175:	f2 75 00 00                   	bset	#5, 0[r7].b
+   1e179:	f6 75 00 00                   	btst	#5, 0[r7].b
+   1e17d:	23 06                         	bnc.b	0x1e183
+   1e17f:	f6 71 00 00                   	btst	#1, 0[r7].b
+   1e183:	23 04                         	bnc.b	0x1e187
+   1e185:	78 0d                         	bset	#0, r13
+   1e187:	f6 75 00 00                   	btst	#5, 0[r7].b
+   1e18b:	7e 5b                         	rolc	r11
+   1e18d:	fb e6 04                      	mov.l	#4, r14
+   1e190:	7e ae                         	push.l	r14
+   1e192:	f6 73 00 00                   	btst	#3, 0[r7].b
+   1e196:	22 06                         	bc.b	0x1e19c
+   1e198:	f6 70 00 00                   	btst	#0, 0[r7].b
+   1e19c:	7e be                         	pop	r14
+   1e19e:	7e 4b                         	rorc	r11
+   1e1a0:	7f 1e                         	jsr	r14
+   1e1a2:	23 04                         	bnc.b	0x1e1a6
+   1e1a4:	78 1d                         	bset	#1, r13
+   1e1a6:	f6 70 01 00                   	btst	#0, 1[r7].b
+   1e1aa:	23 06                         	bnc.b	0x1e1b0
+   1e1ac:	f6 75 00 00                   	btst	#5, 0[r7].b
+   1e1b0:	23 04                         	bnc.b	0x1e1b4
+   1e1b2:	7a 0d                         	bclr	#0, r13
+   1e1b4:	23 04                         	bnc.b	0x1e1b8
+   1e1b6:	7a 1d                         	bclr	#1, r13
+   1e1b8:	f6 70 01 00                   	btst	#0, 1[r7].b
+   1e1bc:	23 06                         	bnc.b	0x1e1c2
+   1e1be:	f2 7d 00 00                   	bclr	#5, 0[r7].b
+   1e1c2:	0c                            	bra.s	0x1e1c6
+   1e1c3:	37                            	*unknown*
+   1e1c4:	02                            	rts
+   1e1c5:	00                            	brk
+   1e1c6:	7c 7c                         	btst	#7, r12
+   1e1c8:	23 0a                         	bnc.b	0x1e1d2
+   1e1ca:	ce 7e 01 00                   	mov.b	1[r7], r14
+   1e1ce:	7e 0e                         	not	r14
+   1e1d0:	7c 1e                         	btst	#1, r14
+   1e1d2:	23 06                         	bnc.b	0x1e1d8
+   1e1d4:	f2 76 00 00                   	bset	#6, 0[r7].b
+   1e1d8:	f6 76 00 00                   	btst	#6, 0[r7].b
+   1e1dc:	7e 5b                         	rolc	r11
+   1e1de:	fb e6 04                      	mov.l	#4, r14
+   1e1e1:	7e ae                         	push.l	r14
+   1e1e3:	f6 72 00 00                   	btst	#2, 0[r7].b
+   1e1e7:	22 06                         	bc.b	0x1e1ed
+   1e1e9:	f6 71 00 00                   	btst	#1, 0[r7].b
+   1e1ed:	7e be                         	pop	r14
+   1e1ef:	7e 4b                         	rorc	r11
+   1e1f1:	7f 1e                         	jsr	r14
+   1e1f3:	23 04                         	bnc.b	0x1e1f7
+   1e1f5:	78 0d                         	bset	#0, r13
+   1e1f7:	f6 76 00 00                   	btst	#6, 0[r7].b
+   1e1fb:	23 06                         	bnc.b	0x1e201
+   1e1fd:	f6 70 00 00                   	btst	#0, 0[r7].b
+   1e201:	23 04                         	bnc.b	0x1e205
+   1e203:	78 1d                         	bset	#1, r13
+   1e205:	f6 71 01 00                   	btst	#1, 1[r7].b
+   1e209:	23 06                         	bnc.b	0x1e20f
+   1e20b:	f6 76 00 00                   	btst	#6, 0[r7].b
+   1e20f:	23 04                         	bnc.b	0x1e213
+   1e211:	7a 0d                         	bclr	#0, r13
+   1e213:	23 04                         	bnc.b	0x1e217
+   1e215:	7a 1d                         	bclr	#1, r13
+   1e217:	f6 71 01 00                   	btst	#1, 1[r7].b
+   1e21b:	23 06                         	bnc.b	0x1e221
+   1e21d:	f2 7e 00 00                   	bclr	#6, 0[r7].b
+   1e221:	0c                            	bra.s	0x1e225
+   1e222:	37                            	*unknown*
+   1e223:	02                            	rts
+   1e224:	00                            	brk
+   1e225:	f6 71 00 00                   	btst	#1, 0[r7].b
+   1e229:	23 04                         	bnc.b	0x1e22d
+   1e22b:	78 2d                         	bset	#2, r13
+   1e22d:	23 04                         	bnc.b	0x1e231
+   1e22f:	7a 4d                         	bclr	#4, r13
+   1e231:	23 04                         	bnc.b	0x1e235
+   1e233:	7a 5d                         	bclr	#5, r13
+   1e235:	f6 72 00 00                   	btst	#2, 0[r7].b
+   1e239:	23 04                         	bnc.b	0x1e23d
+   1e23b:	78 4d                         	bset	#4, r13
+   1e23d:	23 04                         	bnc.b	0x1e241
+   1e23f:	78 5d                         	bset	#5, r13
+   1e241:	23 04                         	bnc.b	0x1e245
+   1e243:	7a 2d                         	bclr	#2, r13
+   1e245:	f6 73 00 00                   	btst	#3, 0[r7].b
+   1e249:	23 04                         	bnc.b	0x1e24d
+   1e24b:	78 4d                         	bset	#4, r13
+   1e24d:	23 04                         	bnc.b	0x1e251
+   1e24f:	78 2d                         	bset	#2, r13
+   1e251:	23 04                         	bnc.b	0x1e255
+   1e253:	7a 5d                         	bclr	#5, r13
+   1e255:	f6 70 00 00                   	btst	#0, 0[r7].b
+   1e259:	23 04                         	bnc.b	0x1e25d
+   1e25b:	78 2d                         	bset	#2, r13
+   1e25d:	23 04                         	bnc.b	0x1e261
+   1e25f:	78 4d                         	bset	#4, r13
+   1e261:	23 04                         	bnc.b	0x1e265
+   1e263:	7a 5d                         	bclr	#5, r13
+   1e265:	0c                            	bra.s	0x1e269
+   1e266:	37                            	*unknown*
+   1e267:	02                            	rts
+   1e268:	00                            	brk
+   1e269:	7f 1a                         	jsr	r10
+   1e26b:	10                            	beq.s	0x1e273
+   1e26c:	0b                            	bra.s	0x1e26f
+   1e26d:	01                            	dbt
+   1e26e:	7c 0d                         	btst	#0, r13
+   1e270:	22 04                         	bc.b	0x1e274
+   1e272:	7c 1d                         	btst	#1, r13
+   1e274:	fc f6 72 ac 10                	bmc	#5, 4268[r7].b
+   1e279:	f2 75 ad 10                   	bset	#5, 4269[r7].b
+   1e27d:	7f 1a                         	jsr	r10
+   1e27f:	11                            	beq.s	0x1e288
+   1e280:	f6 70 18 11                   	btst	#0, 4376[r7].b
+   1e284:	23 06                         	bnc.b	0x1e28a
+   1e286:	f2 75 02 00                   	bset	#5, 2[r7].b
+   1e28a:	7f 1a                         	jsr	r10
+   1e28c:	11                            	beq.s	0x1e295
+   1e28d:	f6 74 00 00                   	btst	#4, 0[r7].b
+   1e291:	23 06                         	bnc.b	0x1e297
+   1e293:	f2 76 03 00                   	bset	#6, 3[r7].b
+   1e297:	f6 75 00 00                   	btst	#5, 0[r7].b
+   1e29b:	23 06                         	bnc.b	0x1e2a1
+   1e29d:	f2 77 03 00                   	bset	#7, 3[r7].b
+   1e2a1:	f6 76 00 00                   	btst	#6, 0[r7].b
+   1e2a5:	23 06                         	bnc.b	0x1e2ab
+   1e2a7:	f2 70 04 00                   	bset	#0, 4[r7].b
+   1e2ab:	7c 0c                         	btst	#0, r12
+   1e2ad:	23 06                         	bnc.b	0x1e2b3
+   1e2af:	f6 76 03 00                   	btst	#6, 3[r7].b
+   1e2b3:	7e 5b                         	rolc	r11
+   1e2b5:	fb e6 0a                      	mov.l	#10, r14
+   1e2b8:	7e ae                         	push.l	r14
+   1e2ba:	7c 1c                         	btst	#1, r12
+   1e2bc:	23 06                         	bnc.b	0x1e2c2
+   1e2be:	f6 77 03 00                   	btst	#7, 3[r7].b
+   1e2c2:	7e be                         	pop	r14
+   1e2c4:	7e 4b                         	rorc	r11
+   1e2c6:	7f 1e                         	jsr	r14
+   1e2c8:	7e 5b                         	rolc	r11
+   1e2ca:	fb e6 0a                      	mov.l	#10, r14
+   1e2cd:	7e ae                         	push.l	r14
+   1e2cf:	7c 2c                         	btst	#2, r12
+   1e2d1:	23 06                         	bnc.b	0x1e2d7
+   1e2d3:	f6 70 04 00                   	btst	#0, 4[r7].b
+   1e2d7:	7e be                         	pop	r14
+   1e2d9:	7e 4b                         	rorc	r11
+   1e2db:	7f 1e                         	jsr	r14
+   1e2dd:	23 04                         	bnc.b	0x1e2e1
+   1e2df:	7c 3c                         	btst	#3, r12
+   1e2e1:	23 06                         	bnc.b	0x1e2e7
+   1e2e3:	f6 75 02 00                   	btst	#5, 2[r7].b
+   1e2e7:	23 08                         	bnc.b	0x1e2ef
+   1e2e9:	ef ce                         	mov.l	r12, r14
+   1e2eb:	7e 0e                         	not	r14
+   1e2ed:	7c 8e                         	btst	#8, r14
+   1e2ef:	23 06                         	bnc.b	0x1e2f5
+   1e2f1:	f2 74 02 00                   	bset	#4, 2[r7].b
+   1e2f5:	f6 74 02 00                   	btst	#4, 2[r7].b
+   1e2f9:	23 08                         	bnc.b	0x1e301
+   1e2fb:	ef ce                         	mov.l	r12, r14
+   1e2fd:	7e 0e                         	not	r14
+   1e2ff:	7c 8e                         	btst	#8, r14
+   1e301:	23 04                         	bnc.b	0x1e305
+   1e303:	78 3d                         	bset	#3, r13
+   1e305:	23 06                         	bnc.b	0x1e30b
+   1e307:	f2 7e 03 00                   	bclr	#6, 3[r7].b
+   1e30b:	23 06                         	bnc.b	0x1e311
+   1e30d:	f2 7f 03 00                   	bclr	#7, 3[r7].b
+   1e311:	23 06                         	bnc.b	0x1e317
+   1e313:	f2 70 04 00                   	bset	#0, 4[r7].b
+   1e317:	7c 8c                         	btst	#8, r12
+   1e319:	23 04                         	bnc.b	0x1e31d
+   1e31b:	7a 3d                         	bclr	#3, r13
+   1e31d:	23 06                         	bnc.b	0x1e323
+   1e31f:	f2 7c 02 00                   	bclr	#4, 2[r7].b
+   1e323:	7f 1a                         	jsr	r10
+   1e325:	10                            	beq.s	0x1e32d
+   1e326:	0b                            	bra.s	0x1e329
+   1e327:	00                            	brk
+   1e328:	7c 8c                         	btst	#8, r12
+   1e32a:	fc f6 72 ac 10                	bmc	#5, 4268[r7].b
+   1e32f:	f2 75 ad 10                   	bset	#5, 4269[r7].b
+   1e333:	7f 1a                         	jsr	r10
+   1e335:	11                            	beq.s	0x1e33e
+   1e336:	f6 70 10 11                   	btst	#0, 4368[r7].b
+   1e33a:	fc f2 72 01 00                	bmc	#4, 1[r7].b
+   1e33f:	23 06                         	bnc.b	0x1e345
+   1e341:	f2 7d 02 00                   	bclr	#5, 2[r7].b
+   1e345:	7f 1a                         	jsr	r10
+   1e347:	11                            	beq.s	0x1e350
+   1e348:	f6 74 01 00                   	btst	#4, 1[r7].b
+   1e34c:	23 08                         	bnc.b	0x1e354
+   1e34e:	ef ce                         	mov.l	r12, r14
+   1e350:	7e 0e                         	not	r14
+   1e352:	7c 3e                         	btst	#3, r14
+   1e354:	23 04                         	bnc.b	0x1e358
+   1e356:	78 6d                         	bset	#6, r13
+   1e358:	7c 3c                         	btst	#3, r12
+   1e35a:	23 04                         	bnc.b	0x1e35e
+   1e35c:	7a 6d                         	bclr	#6, r13
+   1e35e:	7f a0                         	setpsw	c
+   1e360:	7e 5b                         	rolc	r11
+   1e362:	fb e6 04                      	mov.l	#4, r14
+   1e365:	7e ae                         	push.l	r14
+   1e367:	f6 77 00 00                   	btst	#7, 0[r7].b
+   1e36b:	23 04                         	bnc.b	0x1e36f
+   1e36d:	7c 5c                         	btst	#5, r12
+   1e36f:	7e 5b                         	rolc	r11
+   1e371:	fb e6 0a                      	mov.l	#10, r14
+   1e374:	7e ae                         	push.l	r14
+   1e376:	f6 70 01 00                   	btst	#0, 1[r7].b
+   1e37a:	23 04                         	bnc.b	0x1e37e
+   1e37c:	7c 6c                         	btst	#6, r12
+   1e37e:	7e be                         	pop	r14
+   1e380:	7e 4b                         	rorc	r11
+   1e382:	7f 1e                         	jsr	r14
+   1e384:	7e 5b                         	rolc	r11
+   1e386:	fb e6 0a                      	mov.l	#10, r14
+   1e389:	7e ae                         	push.l	r14
+   1e38b:	f6 71 01 00                   	btst	#1, 1[r7].b
+   1e38f:	23 04                         	bnc.b	0x1e393
+   1e391:	7c 7c                         	btst	#7, r12
+   1e393:	7e be                         	pop	r14
+   1e395:	7e 4b                         	rorc	r11
+   1e397:	7f 1e                         	jsr	r14
+   1e399:	7e be                         	pop	r14
+   1e39b:	7e 4b                         	rorc	r11
+   1e39d:	7f 1e                         	jsr	r14
+   1e39f:	fc f2 72 02 00                	bmc	#4, 2[r7].b
+   1e3a4:	02                            	rts
